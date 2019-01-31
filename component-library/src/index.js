@@ -27,4 +27,4 @@ ContainerComponent.propTypes = {
   children: PropTypes.node
 };
 
-export { default as ContainerComponent };
+export default ContainerComponent;
