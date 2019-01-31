@@ -4,7 +4,6 @@ import postcss from "rollup-plugin-postcss";
 import resolve from "rollup-plugin-node-resolve";
 import url from "rollup-plugin-url";
 import multiEntry from "rollup-plugin-multi-entry";
-import commonjs from "rollup-plugin-commonjs";
 
 import pkg from "./package.json";
 
@@ -35,7 +34,6 @@ export default {
       exclude: "node_modules/**",
       plugins: ["external-helpers"]
     }),
-    commonjs(),
     resolve({
       customResolveOptions: {
         moduleDirectory: "src"
